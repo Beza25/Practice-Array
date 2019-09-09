@@ -3,26 +3,28 @@ import java.util.Scanner;
 public class Array1 {
     public static void main(String[] args){
 
-       //Sum();
-       //userSum();
-       //Names();
-       //five();
-        // reverse();
-        //Replace();
+       Sum();
+       userSum();
+       Names();
+       five();
+        reverse();
+        Replace();
         match();
 
     }
 
-    public static int Sum(){
+    public static void Sum(){
         int values[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int sum = 0;
         for(int i = 0; i < 10; i++){
             sum += i;
-            System.out.println(sum);
+            System.out.println();
         }
-        return sum;
+        System.out.println("Thes sum is " + sum + ".");
+
 
     }
+
     public static void userSum(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter 10 different numbers, and I will tell you the sum.");
@@ -42,6 +44,7 @@ public class Array1 {
         }
         System.out.println("The numbers you put in are " + display.substring(0,display.length()-2) +  ".");
         System.out.println( "The sum is " + sum +".");
+        System.out.println();
     }
 
     public static void Names(){
@@ -49,6 +52,7 @@ public class Array1 {
         for(int i = 0; i < names.length; i++){
             System.out.println("Hi, My name is " + names[i] + ".");
         }
+        System.out.println();
     }
 
     public static void five(){
@@ -60,12 +64,14 @@ public class Array1 {
             }
         }
         System.out.println("You have 5 at index " + five.substring(0,five.length()-2) + ".");
+        System.out.println();
     }
     public static void reverse(){
         int[] value = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         for (int i= 9; i >= 0; i--){
             System.out.print(value[i] + " ");
         }
+        System.out.println("\n");
     }
     public static void Replace(){
         String[] array = {"w", "t", "y", "h", "k"};
@@ -82,6 +88,7 @@ public class Array1 {
             System.out.print(array[i] + " ");
 
         }
+        System.out.println();
 
     }
 
